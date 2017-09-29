@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 
 public class CreateStudent {
 
-	public static void addStudent(String first_name, String last_name, int class_period,int student_id){
+	public static void addStudent(String first_name, String last_name, int class_period, int student_id){
 		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "EclipseLinkPractice" );
 		EntityManager entitymanager = emfactory.createEntityManager( );
 		entitymanager.getTransaction( ).begin( );
