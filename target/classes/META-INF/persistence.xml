@@ -5,7 +5,7 @@
                          	<class>classes1718.Student</class>
 	<properties>
      	   <property name="javax.persistence.jdbc.user" value="root"/>
-	       <property name="javax.persistence.jdbc.password" value="meson/dance"/>
+	       <property name="javax.persistence.jdbc.password" value="password"/>
 	       <property name="javax.persistence.jdbc.driver"
                    value="com.mysql.jdbc.Driver"/>
            <property name="eclipselink.logging.level" value="FINE"/>
