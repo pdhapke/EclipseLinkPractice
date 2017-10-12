@@ -1,4 +1,6 @@
-package classes1718;
+package Controller;
+import Model.Student;
+
 import java.util.List;
 import java.util.Scanner;
 

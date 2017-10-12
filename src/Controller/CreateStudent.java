@@ -1,5 +1,5 @@
-package classes1718;
-
+package Controller;
+import Model.Student;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -8,7 +8,7 @@ import javax.persistence.Persistence;
 public class CreateStudent {
 
 	public static void addStudent(String first_name, String last_name, int class_period, int student_id){
-		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "EclipseLinkPractice" );
+		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "Student Database EclipseMVC" );
 		EntityManager entitymanager = emfactory.createEntityManager( );
 		entitymanager.getTransaction( ).begin( );
 		
@@ -26,7 +26,7 @@ public class CreateStudent {
 	}
 	
 	public static void addStudent(Student student){
-		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "EclipseLinkPractice" );
+		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "Student Database EclipseMVC" );
 		EntityManager entitymanager = emfactory.createEntityManager( );
 		entitymanager.getTransaction( ).begin( );
 		
@@ -40,7 +40,7 @@ public class CreateStudent {
 	
 	
 	public static void addStudents(Student[] students){
-		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "EclipseLinkPractice" );
+		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "Student Database EclipseMVC" );
 		EntityManager entitymanager = emfactory.createEntityManager( );
 		entitymanager.getTransaction( ).begin( );
 		

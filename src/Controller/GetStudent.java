@@ -1,14 +1,15 @@
-package classes1718;
+package Controller;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery; 
+import Model.Student;
 
 public class GetStudent {
 
 	public static Student fetchByID(int ID){
-		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "EclipseLinkPractice" );
+		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "Student Database EclipseMVC" );
 		EntityManager entitymanager = emfactory.createEntityManager( );
 		entitymanager.getTransaction( ).begin( );
 		
@@ -20,7 +21,7 @@ public class GetStudent {
 	}
 	
 	public static List<Student> fetchAll(){
-		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "EclipseLinkPractice" );
+		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "Student Database EclipseMVC" );
 		EntityManager entitymanager = emfactory.createEntityManager( );
 		entitymanager.getTransaction( ).begin( );
 		
